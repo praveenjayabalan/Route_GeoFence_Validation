@@ -1,0 +1,56 @@
+<script src="route.js"></script>
+<link href="UI.css" rel="stylesheet" type="text/css" />
+
+    <div id="map"></div>
+
+<div class="panel-wrap">
+  <div class="panel">
+    <h3>Route Info</h3><br> 
+          <div id="id="floating-panel"">
+    <div>
+    <b class="space">Source</b>
+    <select class="select-style" id="start">
+        <option value="0">Select Source</option>
+        <option value="Bengaluru, kn">Bengaluru</option>
+        <option value="Hyderabad, ap">Hyderabad</option>        
+        <option value="Cochin, kl">Cochin</option> 
+        <option value="Chennai, tn">Chennai</option>
+        <option value="Mumbai, mh">Mumbai</option>
+        <option value="New Delhi, dl">New Delhi</option>
+        <option value="Kolkotta, eb">Kolkotta</option>       
+    </select>
+<br>
+     <b>Destination</b>
+    <select class="select-style" id="end">
+        <option value="0">Select Destination</option>
+        <option value="Bengaluru, kn">Bengaluru</option>
+        <option value="Hyderabad, ap">Hyderabad</option>        
+        <option value="Cochin, kl">Cochin</option> 
+        <option value="Chennai, tn">Chennai</option>
+    </select>
+    <br>
+    <br>
+    <b>Check Points</b> 
+    <select   class="select-stylemulti" multiple id="waypoints">
+        <option value="Coimbatore, tn">Coimbatore</option>
+        <option value="Madurai, tn">Madurai</option>
+        <option value="trichy, tn">Trichy</option>
+        <option value="Salem, tn">Salem</option>
+        <option value="Erode, tn">Erode</option>
+        <option value="Hosur, tn">Hosur</option>
+    </select>
+    <br>
+<br>      <input class="button" type="submit" id="submit">
+
+<!-- <br>      <button class="button" onclick="CheckGeoValidation()" type="button" id="CheckGeo" >Check Geofence</button>  -->
+    </div>
+    <div id="directions-panel"></div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+<script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=MAPAPIKEY&libraries=drawing&callback=initMap"></script>

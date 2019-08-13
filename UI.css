@@ -1,0 +1,127 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+  width: 77%
+}
+
+/* panel layout mechanics */
+.panel-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20em;
+  transform: translateX(100%);
+  transition: .3s ease-out;
+}
+.panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #eee;
+  overflow: auto;
+  padding: 1em;
+}
+
+/* simulate panel state control --
+this can also be triggered by a 
+class name added to the body tag. 
+Just using a checkbox sibling here
+for simplicity
+*/ 
+.panel-wrap {
+  transform: translateX(0%);
+}
+
+
+/* demo display */
+*,*:before, *:after {box-sizing: border-box;}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+h3 {
+  margin: 0;
+}
+p {
+  line-height: 1.4;
+  margin: 2em 0 0 0;
+}
+
+
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 65%;
+    border-radius: 10px;
+    overflow: hidden;
+    /*background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;*/
+    margin: 5px;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.space
+{
+  padding-right: 37px
+}
+
+
+.select-stylemulti {
+    border: 1px solid #ccc;
+    width: 96%;
+    height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    /*background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;*/
+    margin: 5px;
+}
+
+.select-stylemulti select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-stylemulti select:focus {
+    outline: none;
+}
+
+
+.button {
+  background-color: #008CBA; /* Green */
+   border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  /*opacity: 0.6;*/
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/*.button:hover {opacity: 1}*/
